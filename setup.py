@@ -57,16 +57,14 @@ if __name__ == '__main__':
     
     zsh_config = os.path.join(current_dir, 'zsh')
     zsh_target = home_dir
-    add(zsh_config, zsh_target, True)
+    add(zsh_config, zsh_target, False)
 
     nvim_config = os.path.join(current_dir, 'nvim')
     nvim_target = home_dir
     add(nvim_config, nvim_target, False)
-    remove(nvim_config, nvim_target, True)
 
-    foo_config = os.path.join(current_dir, 'foo')
-    foo_target = home_dir
-    add(foo_config, foo_target, False)
-    remove(foo_config, foo_target, True)
+    tmux_config = os.path.join(current_dir, 'tmux')
+    tmux_target = home_dir
+    add(tmux_config, tmux_target, False)
 
 
