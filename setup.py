@@ -53,7 +53,7 @@ def remove(config_dir, target_dir, dry_run):
 
 if __name__ == '__main__':
     current_dir = os.path.dirname(os.path.realpath(__file__))
-    home_dir = os.path.expanduser(os.getenv('HOME'))
+    home_dir = os.path.expanduser(os.getenv('HOME', '~'))
     
     zsh_config = os.path.join(current_dir, 'zsh')
     zsh_target = home_dir
