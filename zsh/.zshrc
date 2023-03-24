@@ -102,4 +102,11 @@ source $ZSH/oh-my-zsh.sh
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completionexport PATH="/opt/homebrew/opt/openjdk@11/bin:$PATH"
+export PATH="/Users/mle/.local/bin:$PATH"
+
+export DENO_INSTALL="/Users/mle/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/opt/homebrew/Cellar/bun/0.5.7/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/0.5.7/share/zsh/site-functions/_bun"
