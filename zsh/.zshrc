@@ -110,3 +110,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "/opt/homebrew/Cellar/bun/0.5.7/share/zsh/site-functions/_bun" ] && source "/opt/homebrew/Cellar/bun/0.5.7/share/zsh/site-functions/_bun"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
